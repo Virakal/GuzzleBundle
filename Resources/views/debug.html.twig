@@ -50,7 +50,7 @@
                 {% for i, message in group.messages %}
 
                     <li class="{{ i is odd ? 'odd' : 'even' }}">
-                        <code>[{{ message.level }}] {{ message.message }}</code>
+                        <code>[{{ message.level }}] {{ message.message | nl2br }}</code>
                     </li>
                 {% endfor %}
             {% endfor %}
